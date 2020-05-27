@@ -1,0 +1,152 @@
+#fullpage-container {
+    height: calc(100vh - 110px);
+}
+
+#fullpage-container-search {
+  height: 100%;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: column;
+    background: #f4f6f7;
+    height: 100%;
+    margin: 0 64px;
+}
+
+/* DIVIDERS */
+
+#flex-container .horz-divider {
+    background: #fff;
+    min-height: 36px;
+    width: 100%;
+}
+#flex-container .vert-divider {
+    background: #fff;
+    min-width: 36px;
+}
+
+/* LEFT */
+
+#flex-container .left {
+    width: 61.8%;
+    padding: 32px;
+}
+
+#flex-container .content {
+    display: flex;
+    flex-grow: 1;
+}
+
+
+/* LEFT CONTENT */
+#content-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 80px);
+}
+#content-container .btn-container{
+    background: blue;
+}
+
+/* RIGHT */
+
+#flex-container .right {
+    width: calc(100% - 61.8%);
+    display: flex;
+    flex-direction: column;
+}
+#flex-container .right .img-container {
+    width: 100%;
+    min-height: 61.8%;
+    overflow: hidden;
+}
+
+/* IMG CONTAINER */
+#img {
+    width: 100%;
+    height: 535px;
+    overflow: hidden;
+}
+
+
+#flex-container .right .info {
+    display: flex;
+    height: 100%;
+    padding: 24px 32px;
+    line-height: 2.48em;
+}
+
+/* HEADINGS, SUBHEADINGS */
+.header {
+    font-size: 1.75em;
+    font-weight: 300;
+
+} 
+
+/* HR DIV */
+hr {
+    margin: 24px 0;
+    border: 0.5px solid #bdc3c7;
+  }
+  #chat hr {
+    margin: 20px 0;
+  }
+
+ #info-container hr {
+     margin: 0px 0;
+ }
+
+  /* BUTTONS */
+  .btn {
+    position: relative;
+    color: white;
+    padding: 16px 24px;
+    cursor: pointer;
+    user-select: none;
+    transition: 128ms;
+    background: #a31e24;
+  }
+  .btn img {
+    position: absolute;
+    width: 24px;
+    transform: rotate(180deg);
+    right: 10px;
+    top: 12px;
+  }
+ 
+  .btn:hover {
+    background: #c42f34;
+  }
+  .btn:active {
+    background: #89191e;
+  }
+
+  /* INFO CARDS */
+  .card {
+    line-height: 2em;
+    margin-bottom: 28px;
+    background: #e5e5e5;
+    padding: 18px;
+    letter-spacing: 0;
+  }
+  .card .heading {
+    font-weight: 400;
+    font-size: 1.3em;
+    color: black;
+  }
+  .card hr {
+    border-color: #ccc;
+    margin: 12px;
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+
+/* INFO AREA */
+#info-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}

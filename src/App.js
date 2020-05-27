@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter, Route } from "react-router-dom";
 
-function App() {
+import "./index.css";
+
+import Home from "./components/home";
+import Search from "./components/search";
+import Careers from "./components/careers";
+import Contact from "./components/contact";
+import Order from "./components/order";
+
+const App = () => {
+  const [basket, setBasket] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Route exact path="/" render={() => <Home />} />
+      <Route exact path="/search" render={() => <Search basket={basket} setBasket={setBasket}/>} />
+      <Route exact path="/search/:query"
+        render={({ match }) => <Search basket={basket} setBasket={setBasket} searchTerm={match.params.query} />}
+      />
+      <Route exact path="/careers" render={() => <Careers basket={basket} />} />
+      <Route exact path="/contact" render={() => <Contact basket={basket} />} />
+      <Route exact path="/order" render={() => <Order basket={basket} setBasket={setBasket} />} />
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,30 @@
+#collection-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #fff;
+}
+#collection-container div{
+  position: relative;
+  width: 24%;
+  height: 180px;
+  background: #f4f6f7;
+  overflow: hidden;
+  cursor: pointer;
+}
+#collection-container img{
+  transition: 314ms;
+  opacity: 0.75;
+}
+#collection-container img:hover{
+  filter: contrast(135%);
+  opacity: 1;
+}
+#collection-container span{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  padding: 16px;
+  background: white;
+}

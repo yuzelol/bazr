@@ -1,0 +1,54 @@
+.order-container{
+    display: flex;
+    height: 75px;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.order-img{
+    width: 120px;
+    height: 100%;
+}
+
+.order-card{
+    display:flex;
+    height: 100%;
+    background: #e5e5e5;
+    width: 100%;
+}
+.order-text-container{
+    width: 100%;
+}
+.order-title{
+    padding: 14px 16px;
+    font-size: 1.2em;
+    font-weight: 500;
+    width: 100%;
+}
+.order-price{
+    padding-left: 16px;
+}
+
+.order-cross{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 100%;
+}
+.order-cross-img{
+    transform: scale(1.5, 1.5)
+}
+
+/* COST BOX */
+#cost-container{
+    width: 100%;
+}
+.cost-subcontainer{
+    display:flex;
+}
+.cost-total{
+    align-self: center;
+    font-size: 1.75em;
+    letter-spacing: 2px;
+}
